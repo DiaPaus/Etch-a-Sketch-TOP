@@ -1,0 +1,17 @@
+
+  .container{
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  .square{
+    --ratio:calc(100%/var(--numberOfSquaresPerSide));
+    aspect-ratio: 1 / 1;
+    flex-basis: calc(var(--ratio) - 2px);
+    margin:1px;
+    background-color: whitesmoke;
+    }
+
+  .hovered{
+    background-color:mediumslateblue;
+  }
